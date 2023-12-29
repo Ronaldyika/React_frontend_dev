@@ -1,0 +1,7 @@
+#day 2
+-what a root component is
+-how to import and export components
+-wheen to use default and named imports and exports
+-how to import and export multiple components from a file
+
+##started markup with JSX
