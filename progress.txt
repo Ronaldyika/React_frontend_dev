@@ -5,3 +5,10 @@
 -how to import and export multiple components from a file
 
 ##started markup with JSX
+
+today i added myfirst two apps
+
+
+#target for my todo list
+
+-finish the todo list in less than 3 days
