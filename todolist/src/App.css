@@ -46,7 +46,7 @@ h1{
 
 }
 .todo-input-item input:focus{
-  outline: 2px solid rgb(0,223,122);
+  outline: 2px solid rgb(125, 182, 35);
 }
 .primaryBtn{
   color: white;
