@@ -1,7 +1,10 @@
 import logo from './logo.svg';
+import React,{useContext, useState} from 'react'
 import './App.css';
+// import React,{useState} from 'react';
 
 function App() {
+  const [isCompleteScreen,setIsCompleteScreen]=useState(false)
   return (
     <div className="App">
       <h1>Yika Todos</h1>
@@ -20,8 +23,8 @@ function App() {
           </div>
         </div>
         <div className='btn-area'>
-          <button>Todo</button>
-          <button>Completed</button>
+          <button className={`secondaryBtn isCompleteScreen ${isCompleteScreen === false && `active`}`} onClick={()=>setIsCompleteScreen(false)}>Todo</button>
+          <button className={` secondaryBtn isCompleteScreen ${isCompleteScreen === true && `active`}`} onClick={()=>setIsCompleteScreen(true)}>Completed</button>
         </div>
         <div className='todo-list'>
           <div className='todo-list-item'>
