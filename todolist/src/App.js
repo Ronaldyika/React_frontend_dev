@@ -28,7 +28,7 @@ function App() {
         </div>
         <div className='todo-list'>
           <div className='todo-list-item'>
-            <h1>Task 1</h1>
+            <h1>Task 2</h1>
             <p>description</p>
           </div>
         </div>
