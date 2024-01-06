@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Greet from './components/props';
 import Greeting from './components/read';
+import Message from './components/message_states';
 import Welcome from './components/class';
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <p>i am a prop child</p>
           </Greet>
           <Greet name="Juli"></Greet> */}
+          <Message/>
         </div>
       </header>
     </div>
