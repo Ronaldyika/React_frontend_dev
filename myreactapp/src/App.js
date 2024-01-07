@@ -4,7 +4,10 @@ import Greet from './components/props';
 import Greeting from './components/read';
 import Message from './components/message_states';
 import Welcome from './components/class';
+import Eventhanle from './components/eventhandlers';
+import Counter from './components/counter';
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -12,9 +15,12 @@ function App() {
           <Greeting/>
         </p>
         <div>
-          <h3>
+          <Eventhanle/>
+          {/* <h3>
             <Welcome/>
-          </h3>
+          </h3> */}
+
+          <Counter/>
         </div>
         <div>
           {/* <Greet name="Ronald" value = "InnerPeace">
