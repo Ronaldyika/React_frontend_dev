@@ -6,6 +6,7 @@ import Message from './components/message_states';
 import Welcome from './components/class';
 import Eventhanle from './components/eventhandlers';
 import Counter from './components/counter';
+import FormValidation from './components/formvalidation';
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
           <Counter/>
         </div>
         <div>
+          <FormValidation/>
           {/* <Greet name="Ronald" value = "InnerPeace">
             <h2>i am a child heading</h2>
             <button>Click me</button>
