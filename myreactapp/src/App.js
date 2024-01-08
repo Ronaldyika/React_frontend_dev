@@ -6,6 +6,7 @@ import Message from './components/message_states';
 import Welcome from './components/class';
 import Eventhanle from './components/eventhandlers';
 import Counter from './components/counter';
+import getRequest from './components/getrequest';
 import FormValidation from './components/formvalidation';
 function App() {
 
@@ -14,12 +15,19 @@ function App() {
       <header className="App-header">
         <p>
           <Greeting/>
+          <getRequest/>
         </p>
         <div>
           <Eventhanle/>
           {/* <h3>
             <Welcome/>
           </h3> */}
+
+          <div>
+    
+          </div>
+
+          
 
           <Counter/>
         </div>
