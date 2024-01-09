@@ -8,14 +8,16 @@ import Eventhanle from './components/eventhandlers';
 import Counter from './components/counter';
 import getRequest from './components/getrequest';
 import FormValidation from './components/formvalidation';
+import ReactForms from './components/todayforms';
 function App() {
 
   return (
     <div className="App">
       <header className="App-header">
         <p>
+          <ReactForms/>
           <Greeting/>
-          <getRequest/>
+
         </p>
         <div>
           <Eventhanle/>
@@ -42,6 +44,9 @@ function App() {
           </Greet>
           <Greet name="Juli"></Greet> */}
           <Message/>
+          <h2>the get request is to display below this tab</h2>
+
+          <getRequest/>
         </div>
       </header>
     </div>
