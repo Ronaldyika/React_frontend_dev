@@ -12,14 +12,13 @@ class GetData extends Component {
     }
 
     componentDidMount() {
-        axios.get("https://randomuser.me/api/")
+        axios.get("http://127.0.0.1:8000/book/libarians/")
             .then(response => {
-                // Assuming you want to extract results from the API response
-                const posts = response.data.results;
+                const posts = response.data;
 
                 this.setState({
                     posts: posts,
-                    error: null // Reset error on successful fetch
+                    error: null 
                 });
             })
             .catch(error => {
@@ -31,6 +30,9 @@ class GetData extends Component {
 
     render() {
         const { posts, error } = this.state;
+        if (!posts || !posts.length) {
+            return <div>Loading...</div>;
+        }
 
         return (
             <div>
@@ -40,8 +42,9 @@ class GetData extends Component {
                     <div>
                         {posts.length ? (
                             posts.map(post => (
-                                <div key={post.uuid}>
-                                    <p>{post.name.first} {post.name.last}</p>
+                                <div key={post.id}>
+                                    <p>Name: {post.name}</p>
+                                    <p>Description: {post.description}</p>
                                 </div>
                             ))
                         ) : (
