@@ -10,8 +10,8 @@ import Counter from './components/counter';
 import FormValidation from './components/formvalidation';
 // import Formpost from './fetchrequest/formpost';
 import ReactForms from './components/todayforms';
-// import GetData from './fetchrequest/get';
 import FormSubmit from './fetchrequest/practicepost';
+import GetData from './fetchrequest/get';
 function App() {
 
   return (
@@ -26,7 +26,12 @@ function App() {
 
           <GetData/> */}
 
+
         </p>
+
+        <br>
+        </br>
+        <GetData/><br></br>
         <FormSubmit/>
         <div>
           <Eventhanle/>

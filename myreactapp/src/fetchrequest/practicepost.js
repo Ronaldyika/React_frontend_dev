@@ -8,7 +8,6 @@ class FormSubmit extends Component{
         this.state=({
             name:'',
             email:'',
-            password:''
         })
 
 
@@ -27,7 +26,7 @@ class FormSubmit extends Component{
         e.preventDefault()
         // console.log(this.state)
 
-        axios.post('https://jsonplaceholder.typicode.com/posts',this.state)
+        axios.post('http://127.0.0.1:8000/book/libarians/',this.state)
         .then(response =>{
             console.log(response)
         })
@@ -38,7 +37,7 @@ class FormSubmit extends Component{
     
 
     render(){
-        const {name,email,password} = this.state
+        const {name,email} = this.state
         return(
             <div className="formdetails">
                 <form onSubmit={this.submitHandler}>
@@ -49,9 +48,6 @@ class FormSubmit extends Component{
 
                     <label>Email</label><br></br>
                     <input type="email" name="email" placeholder="enter a valid email" value={email} onChange={this.changeHandler}/><br></br>
-
-                    <label>password</label><br></br>
-                    <input type="password" name="password" placeholder="enter a valid password" value={password} onChange={this.changeHandler}/><br></br>
 
                     <button type="submit">Submit</button>
 
