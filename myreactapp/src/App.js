@@ -8,6 +8,7 @@ import Eventhanle from './components/eventhandlers';
 import Counter from './components/counter';
 import GetRequest from './components/getrequest';
 import FormValidation from './components/formvalidation';
+import Formpost from './fetchrequest/formpost';
 import ReactForms from './components/todayforms';
 import GetData from './fetchrequest/get';
 function App() {
@@ -17,7 +18,10 @@ function App() {
       <header className="App-header">
         <p>
           {/* <ReactForms/>
+          
+
           <Greeting/> */}
+          <Formpost/>
 
           <GetData/>
 
