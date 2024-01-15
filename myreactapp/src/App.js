@@ -6,10 +6,11 @@ import Message from './components/message_states';
 import Welcome from './components/class';
 import Eventhanle from './components/eventhandlers';
 import Counter from './components/counter';
-import GetRequest from './components/getrequest';
+// import GetRequest from './components/getrequest';
 import FormValidation from './components/formvalidation';
-import Formpost from './fetchrequest/formpost';
+// import Formpost from './fetchrequest/formpost';
 import ReactForms from './components/todayforms';
+import FormSubmit from './fetchrequest/practicepost';
 import GetData from './fetchrequest/get';
 function App() {
 
@@ -21,11 +22,17 @@ function App() {
           
 
           <Greeting/> */}
-          <Formpost/>
+          {/* <Formpost/>
 
-          <GetData/>
+          <GetData/> */}
+
 
         </p>
+
+        <br>
+        </br>
+        <GetData/><br></br>
+        <FormSubmit/>
         <div>
           <Eventhanle/>
           {/* <h3>

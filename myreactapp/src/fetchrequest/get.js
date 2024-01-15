@@ -44,7 +44,7 @@ class GetData extends Component {
                             posts.map(post => (
                                 <div key={post.id}>
                                     <p>Name: {post.name}</p>
-                                    <p>Description: {post.description}</p>
+                                    <p>Description: {post.email}</p>
                                 </div>
                             ))
                         ) : (
