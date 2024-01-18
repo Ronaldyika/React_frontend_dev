@@ -45,6 +45,8 @@ class GetData extends Component {
                                 <div key={post.id}>
                                     <p>Name: {post.name}</p>
                                     <p>Description: {post.email}</p>
+                                    <button></button>
+
                                 </div>
                             ))
                         ) : (
